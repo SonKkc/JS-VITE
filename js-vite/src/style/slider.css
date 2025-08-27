@@ -1,5 +1,44 @@
 .swiper {
-  width: 600px;
-  height: 300px;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px auto;
 }
 
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide {
+    user-select: none;
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.237);
+    height: 300px;
+    width: 600px;
+}
+
+.swiper-button {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.swiper-button-next {
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}

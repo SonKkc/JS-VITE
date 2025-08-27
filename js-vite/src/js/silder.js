@@ -1,4 +1,5 @@
 import "../style/slider.css";
+import Swiper from "./swiper.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper(".swiper", {
